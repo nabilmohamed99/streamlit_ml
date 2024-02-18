@@ -15,6 +15,10 @@ st.write("This a pp use 6 inputs to predict the species of penguins using"
                                                                        "to get started"             )
 
 
+password_guess=st.text_input("What is the Password ?")
+if password_guess != st.secrets["password"]:
+         st.stop()
+
 penguin_file=st.file_uploader('Uploat your own penguin data')
 if penguin_file is None :
     rf_pickle = open('random_forest_penguin.pickle', 'rb')
