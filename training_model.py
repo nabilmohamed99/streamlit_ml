@@ -16,7 +16,8 @@ st.write("This a pp use 6 inputs to predict the species of penguins using"
 
 
 password_guess=st.text_input("What is the Password ?")
-if password_guess != st.secrets["password"]:
+#st.secrets["password"]
+if password_guess != "Test":
          st.stop()
 
 penguin_file=st.file_uploader('Uploat your own penguin data')
